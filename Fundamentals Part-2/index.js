@@ -1,3 +1,4 @@
+"use strict";
 //--------------------FUNCTIONS--------------------
 /*A Function is a piece of code that we can re use over and over
 Again , basically a variable with fubnctionality */
@@ -63,3 +64,23 @@ fruitJuice(3, 1); */
 
 //----------- ASSIGNMENT WITH FUNCTIONS------------
 
+//Function Decleratrion
+function calAge1(birthYear) {
+  const age = 2022 - birthYear;
+  console.log(`You Are ${age} years old`);
+
+  return age;
+}
+
+calAge1(1994);
+
+//Function Expression
+
+const calcAge2 = function (birthYear) {
+  const age = 2022 - birthYear;
+  console.log(`You Are ${age} years old`);
+
+  return age;
+};
+
+calcAge2(1965);
