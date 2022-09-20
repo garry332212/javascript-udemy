@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Square+Peg&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rampart+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Handlee&display=swap");
+
+* {
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+
+section {
+  width: 90%;
+  margin: 10px auto;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  font-size: 25px;
+  font-family: "Square Peg", cursive;
+}
+header h1 {
+  margin-right: auto;
+  font-size: 3.5rem;
+}
+header ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+}
+header ul li {
+  margin-left: 2rem;
+  font-size: 3rem;
+}
+header ul li a {
+  text-decoration: none;
+}
+header ul li a:hover,
+header ul li a:focus {
+  color: #fd5f00;
+}
+
+.container {
+  width: 90%;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 1;
+}
+.cover > h1 {
+  font-family: "Alfa Slab One", cursive;
+  font-size: 3rem;
+}
+.cover > h3 {
+  font-size: 2.5rem;
+  font-family: "Amatic SC", cursive;
+}
+.cover > p {
+  font-family: "Rampart One", cursive;
+  font-size: 2.5rem;
+  text-align: center;
+}
+.cover span {
+  background: transparent;
+  font-weight: bold;
+  color: #fd5f00;
+}
+
+.below {
+  font-size: 2rem;
+  margin-top: 5rem;
+  font-family: "Handlee", cursive;
+  text-align: center;
+  color: rgb(62, 148, 149);
+}
+
+.projects {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  font-family: "Josefin Slab", serif;
+
+}
+
+.projects img {
+  width: 40vh;
+}
+
+.projects img:hover {
+  color: #111;
+  background: greenyellow;
+  box-shadow: 0 0 100px greenyellow;
+  animation: img 1s ease infinite;
+}
+@keyframes img {
+  /* 0% {
+    transform: scale(1, 1);
+  } */
+  50% {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+.below span {
+  font-size: 1.3rem;
+  font-family: "Handlee", cursive;
+  color: rgb(32, 226, 229);
+}
+
+.newSection,
+.nextSec {
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-top: 3rem;
+}
+.newSection img,
+.nextSec img {
+  width: 20vh;
+}
+
+.newSection p,
+.nextSec p {
+  color: red;
+}
+
+
+
+
+
+
+
+
+/* TODO - RESPONSIVE DESIGN */
+@media (max-width: 1300px) {
+  .projects div{
+  
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .newSection img,
+.nextSec img {
+  width: 10vh;
+}
+}

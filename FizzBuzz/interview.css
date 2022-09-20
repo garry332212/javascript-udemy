@@ -1,0 +1,15 @@
+h1 ,span li{
+    color: rgb(133, 12, 255)
+    ;list-style: none;
+}
+h2{
+    color:green
+    ;translate: (50%,50%);
+}
+
+
+p{
+    font-size: 2rem;
+    
+}
+
